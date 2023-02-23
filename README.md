@@ -4,11 +4,13 @@ Last cleanup
 maked by CW Lee, CW Song in Ubicomp Lab
 
 ## Environment
-|TOOL|VER|
+|NAME|VER|
 |---|:---:|
-|Flask|3.10|
-|MongoDB|3.8|
+|Ubuntu|?|
+|Flask|?|
+|MongoDB|?|
 
+---
 
 ## Directory    
 EXPLAIN    
