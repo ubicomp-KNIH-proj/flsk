@@ -53,7 +53,19 @@ survey_data
     |   S701_onetime.csv
     |   S701_weekly.csv
     |   ...
-...
+matching1
+|
+│   601.csv
+│   602.csv
+│   603.csv
+|   ...
+matching2
+|
+│   700.txt
+│   701.txt
+│   702.txt
+|   |   ...
+
 ``` 
 * How to run
 ```linux
@@ -85,6 +97,7 @@ python downloadDailySurvey.py
 * 날짜와 수집률의 기준
 * fin.txt 포맷
 * 어디를 수정해야하는가
-1. run save_csv_daily.py then maked mood_data.csv
-2. add header in mood_data.csv and run deleteOverlaData.py then maekd modified mood_data.csv
-3. run done.py then maked overlap_both_per_sur_{date}.csv
+1. Create matching forlder to store Data files collected by date
+2. run save_csv_daily.py then maked mood_data.csv
+3. add header in mood_data.csv and run deleteOverlaData.py then maekd modified mood_data.csv
+4. run done.py then maked overlap_both_per_sur_{date}.csv
