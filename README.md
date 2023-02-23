@@ -68,8 +68,11 @@ matching2
 │   702.txt
 |   |   ...
 
-``` 
-* How to run
+```
+---
+
+## How to run
+
 ```linux
 python app.py
 ```
