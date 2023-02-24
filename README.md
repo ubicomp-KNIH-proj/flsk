@@ -1,24 +1,38 @@
 # WEB_SURVEY
-Last cleanup
 
-maked by CW Lee, CW Song in Ubicomp Lab
+This program uses Flask's built-in development server without installing a separate server.
+Purpose: Collection of initial, weekly and daily surveys
 
 ## Environment
 |NAME|VER|
 |---|:---:|
-|Ubuntu|?|
-|Flask|?|
-|MongoDB|?|
+|Ubuntu|18.04|
+|Python|3.6.9|
+|Flask|2.0.3|
+|Wizverg|2.0.3|
+
+## Author
+|NAME|Position|
+|---|:---:|
+|Chaewon Song|Leader|
+|Changwon Lee|Member|
 
 ---
 
 ## Directory    
-EXPLAIN    
 ```
 Distribution
 │   app.py
 │   calIndexSearch.py    
-│
+|   save_csv_daily.py
+|   deleteOverlapData.py
+|   deleteUser.py
+|   done.py
+│   -fin.txt
+|   -members.csv
+|   -mood_data.csv
+|   -mood_data_1.csv
+|
 └───static
 │   │   jscript.js
 │   │   main.js
@@ -73,9 +87,16 @@ matching2
 
 ## How to run
 
-```linux
+```
 python app.py
 ```
+
+## How to start
+```
+python app.py
+Connect with url/register
+```
+
 ---
 
 ## Management file    
@@ -85,7 +106,7 @@ python app.py
 * members.csv
 
 ### Delete User
-* deletUser.py
+* deletetUser.py
 
 ### Download survey data
 1. Create a folder in "survey_data" 
@@ -99,9 +120,11 @@ python downloadDailySurvey.py
 
 ### Comparison and validation between collection rates and surveys
 * This progress need fin.txt (people who end of collection)
-* 날짜와 수집률의 기준
-* fin.txt 포맷
-* 어디를 수정해야하는가
+* More than 10% collection rate
+* fin.txt format (only number exclude character 'S')
+#### See the comment
+* modify for android
+* modify for iOS
 1. Create matching forlder to store Data files collected by date
 2. run save_csv_daily.py then maked mood_data.csv
 3. add header in mood_data.csv and run deleteOverlaData.py then maekd modified mood_data.csv
